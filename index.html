@@ -82,7 +82,8 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		</script>
 		 <!-- //scroll -->
  <!-- start header_style3 -->
-			<script type="text/javascript"  src="js/menu.js"></script>
+			<script type="text/javascript"  src="js/menu.js"></script>			
+			<script src="particles.js"></script>	
   <script type="text/javascript">
     $(function() {
         $('#portfoliolist a').lightBox();
@@ -91,19 +92,16 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<div class="header" id="home">
-		   <div id="particles-js">
-				<div class="banner">
-					<div class="wrap">
-						<h2>Web and Server development</h2>
-						<p>liamreed</p>
-					</div>
-				</div>			   
-			</div>
-			<script src="js/particles.js"></script>			
+		
 	</div>
 </div>
 	<!---------banner------------->
-
+	<div class="banner">
+		<div class="wrap">
+			<h2>Web and Server development</h2>
+			<p>liamreed</p>
+		</div>
+	</div>	
 	<!---------about------------->
 	<div class="about" id="about">
 		<div class="wrap">
@@ -200,11 +198,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 		});
 	</script>
 	<script>
-	/* particlesJS('dom-id', params);
-/* @dom-id : set the html tag id [string, optional, default value : particles-js]
-/* @params: set the params [object, optional, default values : check particles.js] */
-
-particlesJS('particles-js', {
+	particlesJS('banner', {
     particles: {
         color: '#fff',
         shape: 'circle', // "circle", "edge" or "triangle"
