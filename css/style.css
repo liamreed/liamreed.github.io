@@ -35,6 +35,7 @@ body {
 .wrap {
 	width: 80%;
 	margin: 0px auto;
+	z-index:10;
 }
 /*header*/
 .header {
@@ -101,6 +102,8 @@ body {
 	margin-top: -5px;
 	text-align:center;
 	padding: 4% 0;
+	position: absolute;
+	z-index:10;
 }
 .banner img{
 	cursor: pointer;
