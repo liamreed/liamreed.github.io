@@ -98,11 +98,10 @@ body {
 #btmnav nav ul li a { font-weight: bold; }
 /*banner*/
 .banner{
-	background: #2C3E50;
+	background: #050505;
 	margin-top: -5px;
 	text-align:center;
-	padding: 4% 0;
-	position: absolute;
+	padding: 1% 0;
 	z-index:10;
 }
 .banner img{
