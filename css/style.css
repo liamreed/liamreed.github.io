@@ -345,7 +345,7 @@ body {
 	left:0;
 }
 .portfolio .label-text {
-	color: #000;
+	color:#fff;
 	position: relative;
 	z-index:500;
 	padding:5px 8px;
@@ -357,7 +357,7 @@ body {
 }
 .portfolio .text-category {
 	display: block;
-	font-size: 14px;
+	font-size: 12px;
 	text-align: left;
 }
 /* Self Clearing Goodness */
