@@ -743,3 +743,16 @@ body > div.footer-bottom > div > div > ul > li:nth-child(5) {
 		top: -40px;
 	}
 }
+html,body{ 
+  margin:0;
+}
+
+canvas{
+	display:block;
+	vertical-align:bottom;
+}
+
+#particles-js{
+  height:150px;
+  background:#b61924
+}

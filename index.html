@@ -92,7 +92,45 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 </head>
 <body>
 	<!---------banner------------->
-	<div class="banner" id="banner">
+	<div class="particle-js" id="particle-js">
+		<script>
+	particlesJS('banner', {
+    particles: {
+        color: '#fff',
+        shape: 'circle', // "circle", "edge" or "triangle"
+        opacity: 0.5,
+        size: 2,
+        size_random: true,
+        nb: 200,
+        line_linked: {
+            enable_auto: true,
+            distance: 250,
+            color: '#fff',
+            opacity: 0.5,
+            width: 1,
+            condensed_mode: {
+                enable: true,
+                rotateX: 600,
+                rotateY: 600
+            }
+        },
+        anim: {
+            enable: true,
+            speed: 2
+        }
+    },
+    interactivity: {
+        enable: true,
+        mouse: {
+            distance: 250
+        },
+        detect_on: 'canvas', // "canvas" or "window"
+        mode: 'grab'
+    },
+    /* Retina Display Support */
+    retina_detect: false
+});
+</script>
 			<h2>Web and Server development</h2>
 			<p>liamreed</p>
 	</div>	
@@ -191,44 +229,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 			});
 		});
 	</script>
-	<script>
-	particlesJS('banner', {
-    particles: {
-        color: '#fff',
-        shape: 'circle', // "circle", "edge" or "triangle"
-        opacity: 0.5,
-        size: 2,
-        size_random: true,
-        nb: 200,
-        line_linked: {
-            enable_auto: true,
-            distance: 250,
-            color: '#fff',
-            opacity: 0.5,
-            width: 1,
-            condensed_mode: {
-                enable: true,
-                rotateX: 600,
-                rotateY: 600
-            }
-        },
-        anim: {
-            enable: true,
-            speed: 2
-        }
-    },
-    interactivity: {
-        enable: true,
-        mouse: {
-            distance: 250
-        },
-        detect_on: 'canvas', // "canvas" or "window"
-        mode: 'grab'
-    },
-    /* Retina Display Support */
-    retina_detect: false
-});
-</script>
+
 		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 		</div>
 	</div>
