@@ -1,29 +1,295 @@
-<!doctype html>
+<!--
+Author: W3layouts
+Author URL: http://w3layouts.com
+License: Creative Commons Attribution 3.0 Unported
+License URL: http://creativecommons.org/licenses/by/3.0/
+-->
+<!DOCTYPE HTML>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="chrome=1">
-    <title>liamreed.github.io by liamreed</title>
+<head>
+<title>Liam Reed | liamreed on github</title>
+<link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<!-- start portfolios -->
+<link href="css/portfolio.css" rel="stylesheet" type="text/css" media="all" />
+		<script type="text/javascript" src="js/fliplightbox.min.js"></script>
+		<script type="text/javascript">
+			$('body').flipLightBox()
+		</script>
+		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+		<script type="text/javascript">
+			$(function() {
 
-    <link rel="stylesheet" href="stylesheets/styles.css">
-    <link rel="stylesheet" href="stylesheets/pygment_trac.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
-    <!--[if lt IE 9]>
-    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-  </head>
-  <body>
-    <div class="wrapper">
-      <header>
-        <h1>liamreed on github</h1>
-        <p>Commit History not shown for BitBucket (Private Repo's!)</p>
+				var filterList = {
 
+					init : function() {
 
-        <p class="view"><a href="https://github.com/liamreed">View My GitHub Profile</a></p>
+						// MixItUp plugin
+						// http://mixitup.io
+						$('#portfoliolist').mixitup({
+							targetSelector : '.portfolio',
+							filterSelector : '.filter',
+							effects : ['fade'],
+							easing : 'snap',
+							// call the hover effect
+							onMixEnd : filterList.hoverEffect()
+						});
 
-      </header>
-      <section>
+					},
 
-<!-- start feedwind code --><script type="text/javascript">document.write('<script type="text/javascript" src="' + ('https:' == document.location.protocol ? 'https://' : 'http://') + 'feed.mikle.com/js/rssmikle.js"><' + '/script>');</script><script type="text/javascript">(function() {var params = {rssmikle_url: "https://github.com/liamreed.atom",rssmikle_frame_width: "500",rssmikle_frame_height: "1000",rssmikle_target: "_blank",rssmikle_font: "Arial, Helvetica, sans-serif",rssmikle_font_size: "10",rssmikle_border: "on",responsive: "on",rssmikle_css_url: "",text_align: "left",text_align2: "right",corner: "off",scrollbar: "on",autoscroll: "off",scrolldirection: "up",scrollstep: "3",mcspeed: "20",sort: "New",rssmikle_title: "off",rssmikle_title_sentence: "",rssmikle_title_link: "",rssmikle_title_bgcolor: "#0066FF",rssmikle_title_color: "#FFFFFF",rssmikle_title_bgimage: "",rssmikle_item_bgcolor: "#F8F8F8",rssmikle_item_bgimage: "",rssmikle_item_title_length: "55",rssmikle_item_title_color: "#000000",rssmikle_item_border_bottom: "on",rssmikle_item_description: "on",item_link: "on",rssmikle_item_description_length: "150",rssmikle_item_description_color: "#000000",rssmikle_item_date: "gl1",rssmikle_timezone: "Etc/GMT",datetime_format: "%b %e, %Y %l:%M:%S %p",item_description_style: "text+tn",item_thumbnail: "full",article_num: "999",rssmikle_item_podcast: "off",keyword_inc: "",keyword_exc: ""};feedwind_show_widget_iframe(params);})();</script><div style="font-size:10px; text-align:center; "><a href="http://feed.mikle.com/" target="_blank" style="color:#CCCCCC;">RSS Feed Widget</a><!--Please display the above link in your web page according to Terms of Service.--></div><!-- end feedwind code -->
-  </body>
+					hoverEffect : function() {
+
+						// Simple parallax effect
+						$('#portfoliolist .portfolio').hover(function() {
+							$(this).find('.label').stop().animate({
+								bottom : 0
+							}, 200, 'easeOutQuad');
+							$(this).find('img').stop().animate({
+								top : -40
+							}, 500, 'easeOutQuad');
+						}, function() {
+							$(this).find('.label').stop().animate({
+								bottom : -40
+							}, 200, 'easeInQuad');
+							$(this).find('img').stop().animate({
+								top : 0
+							}, 300, 'easeOutQuad');
+						});
+
+					}
+				};
+
+				// Run the show!
+				filterList.init();
+
+			});
+		</script>
+		 <!-- scroll -->
+		 <script type="text/javascript">
+			$(document).ready(function() {
+			
+				var defaults = {
+		  			containerID: 'toTop', // fading element id
+					containerHoverID: 'toTopHover', // fading element hover id
+					scrollSpeed: 1200,
+					easingType: 'linear' 
+		 		};
+				
+				
+				$().UItoTop({ easingType: 'easeOutQuart' });
+				
+			});
+		</script>
+		 <!-- //scroll -->
+ <!-- start header_style3 -->
+			<script type="text/javascript"  src="js/menu.js"></script>
+<!-- popup -->
+<link rel="stylesheet" type="text/css" href="css/magnific-popup.css">
+<script src="js/jquery.magnific-popup.js" type="text/javascript"></script>
+				<script>
+					$(document).ready(function() {
+						$('.popup-with-zoom-anim').magnificPopup({
+							type: 'inline',
+							fixedContentPos: false,
+							fixedBgPos: true,
+							overflowY: 'auto',
+							closeBtnInside: true,
+							preloader: false,
+							midClick: true,
+							removalDelay: 300,
+							mainClass: 'my-mfp-zoom-in'
+					});
+				});
+				</script>
+<script type="text/javascript" src="js/jquery.lightbox.js"></script>
+<link rel="stylesheet" type="text/css" href="css/lightbox.css" media="screen" />
+  <script type="text/javascript">
+    $(function() {
+        $('#portfoliolist a').lightBox();
+    });
+   </script>
+</head>
+<body>
+	<div class="header" id="home">
+		   <div class="wrap">
+				<!-- start h_menu -->
+			<div id="topnav"><!--start topnav --->
+	        <nav>
+	        		 <ul>
+						 <li class="active"><a href="#home" class="scroll">Home</a></li>
+					     <li><a href="#about" class="scroll">About</a></li>	
+					     <li><a href="#portfolio" class="scroll">Portfolio</a> </li>			            
+					     <li><a href="#contact" class="scroll">Contact</a></li>
+						<div class="clear"> </div>
+					</ul>
+	        </nav>
+	        <a href="#" id="navbtn">Nav Menu</a>
+	        <div class="clear"></div>
+	      </div>					
+	</div>
+</div>
+	<!---------banner------------->
+	<div class="banner">
+		<div class="wrap">
+			<h2>Web and Server development</h2>
+			<p>liamreed</p>
+			<img src="images/banner.png" alt="" />
+		</div>
+	</div>	
+	<!---------about------------->
+	<div class="about" id="about">
+		<div class="wrap">
+			<h3>About Me</h3>
+			<p>19 Years Old from Warwickshire, UK. Former Art and Graphic Design student of 6 years, now moved to web development, programming and server infrastructure. Experienced in HTML, CSS, PHP, .NET and learning Python & Javascript. Experienced with Linux and Windows dedicated and virtual servers & CMS systems such as WHMCS and WordPress. Holder of multiple certified awards from CISCO including CCNA 1 and 2 and IT Hardware at Merit or Above.</p>
+		</div>
+	</div>
+<div class="portfoli1" id="portfolio"><!-- start portfoli1 -->
+	<div class="wrap">
+		<h5>Portfolio</h5>
+		<h6>Many systems I create include senstive information such as server + database passwords and as such cannot be uploaded to GitHub. Projects I upload publicly to GitHub will be "nulled" of all this information and as such will not represent the final work.</h6>
+		<div class="container"><!-- start container -->
+						
+						<div id="portfoliolist">
+								
+							<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-10.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-10.jpg" alt="Image 2" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>									
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-2.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-2.jpg" alt="Image 2" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>											
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-5.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-5.jpg" alt="Image 2" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>											
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio web mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-2.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-2.jpg" alt="Image 2" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>											
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio app mix_all" data-cat="app" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-6.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-6.jpg" alt="Image 5" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>									
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-7.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-7.jpg" alt="Image 6" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>									
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio card mix_all" data-cat="card" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+								<a href="images/pf-8.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-8.jpg" alt="Image 7" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>								
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>
+							<div class="portfolio logo1 mix_all" data-cat="web" style="display: inline-block; opacity: 1;">
+								<div class="portfolio-wrapper">
+									<a href="images/pf-9.jpg #small-dialog1" class="flipLightBox popup-with-zoom-anim"><img src="images/pf-9.jpg" alt="Image 5" style="top: 0px;"> </a>
+									<div class="label" style="bottom: -40px;">
+										<div class="label-text">
+											<span class="text-category">Title</span>								
+										</div>
+										<div class="label-bg"></div>
+									</div>
+								</div>
+							</div>													
+						</div>														
+		</div><!-- end container -->
+	</div>
+</div>
+<div class="contact" id="contact">
+	<div class="wrap">
+		<h3>Contact Me</h3>
+		<p>Serious enquiries only please.</p>
+        <div class="contact_form">
+			 	 	    <form method="post" action="contact-post.html">
+						    	<span><input type="text" value="Enter your name" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your name';}"></span>
+						    	<span><input type="text" value="Enter your Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your Address';}"></span>
+						    	<span><input type="text" value="Enter your City" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your City';}"></span>
+						    	<span class="left"><input type="text" value="Enter your email Address" onfocus="this.value = '';" onblur="if (this.value == '') {this.value = 'Enter your email Address';}"></span>
+						    <div class="clear"></div>
+						    	<textarea placeholder="Your Message"></textarea>
+						   		<input type="submit" class="" value="Submit us">
+					    </form>
+		 </div>
+	</div>
+</div>
+<div class="footer-bottom">
+	<div class="wrap">
+		<div class="nav">
+			<ul>
+				<li><a href="#home" class="scroll">Home</a><span>:</span></li>
+				<li><a href="#about" class="scroll">About</a><span>:</span></li>
+				<li><a href="#portfolio" class="scroll">Portfolio</a><span>:</span></li>
+				<li><a href="#contact" class="scroll">Contact</a></li>
+			</ul>
+		</div>
+		<div class="copy-right">
+			<p>© Copyright 2014  Liam Reed @liamreed</a></p>
+			 <!-- scroll_top_btn -->
+		<script type="text/javascript" src="js/move-top.js"></script>
+		<script type="text/javascript" src="js/easing.js"></script>
+		<script type="text/javascript">
+		jQuery(document).ready(function($) {
+			$(".scroll").click(function(event){		
+				event.preventDefault();
+				$('html,body').animate({scrollTop:$(this.hash).offset().top},1200);
+			});
+		});
+	</script>
+		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
+		</div>
+	</div>
+</div>	
+</body>
 </html>
