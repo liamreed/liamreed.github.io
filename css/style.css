@@ -345,11 +345,13 @@ body {
 	left:0;
 }
 .portfolio .label-text {
-	color:#fff;
+	color: #000;
 	position: relative;
 	z-index:500;
 	padding:5px 8px;
 }
+
+span.text-category {}
 .portfolio .label-text p {
 	color:#fff;
 	font-size: 1em;
