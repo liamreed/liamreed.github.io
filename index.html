@@ -3,11 +3,13 @@
 <head>
 <title>Liam Reed | liamreed on github</title>
 <link href="css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link rel="stylesheet" href="css/github.css">
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <script type="text/javascript" src="js/jquery.min.js"></script>
 		<script type="text/javascript" src="js/jquery.easing.min.js"></script>
+		<script src="js/jquery.github.min.js"></script>
 		<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
 		<script type="text/javascript">
 			$(function() {
@@ -186,7 +188,9 @@
 										<div class="label-bg"></div>
 									</div>
 								</div>
-							</div>													
+							</div>
+							
+							<div data-repo="jquery-boilerplate/jquery-boilerplate"></div>
 						</div>														
 		</div><!-- end container -->
 	</div>
@@ -215,6 +219,8 @@
 			});
 		});
 	</script>
+	
+	<script>$("[data-repo]").github();</script>
 
 		 <a href="#" id="toTop" style="display: block;"><span id="toTopHover" style="opacity: 1;"></span></a>
 		</div>
